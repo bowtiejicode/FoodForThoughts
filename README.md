@@ -8,4 +8,4 @@ Was wondering if this is because osk and UiAccess + always on top enabled, but t
 ![2osk](2osk.JPG)
 
 2. Did you know that if you were to launch osk from cmd, your osk will also try to search for wdmaud.drv (Winmm  audio system driver) from the current directory (in cmd) that you launched osk? Although it successfully loaded from C:\Windows\System32. All these are loaded through current logon user's privilege and not SYSTEM, but it makes me wonder what happens in the background when you load .drv file as a normal user. Any chance of privilege escalation? The original wdmaud.drv is digitally signed (verify via sigcheck) but is it mandatory for .drv files to be digitally signed before loading? Was thinking if we can have the opportunity to load our custom .drv file to see if we can make some magic happen🥴
-3. ![wdmaud](wdmaud.JPG)
+![wdmaud](wdmaud.JPG)
